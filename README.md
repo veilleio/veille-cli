@@ -102,6 +102,20 @@ veille intelligence-email --query jane.doe@example.com | jq .
 
 The CLI uses the official [Node.js SDK](https://github.com/veilleio/veille-node) (`@veilleio/sdk`). Use the SDK directly for programmatic access.
 
+## All Veille SDKs
+
+| SDK        | Package                                                         | Install                                |
+| ---------- | --------------------------------------------------------------- | -------------------------------------- |
+| Node.js    | [`@veilleio/sdk`](https://www.npmjs.com/package/@veilleio/sdk)  | `npm install @veilleio/sdk`            |
+| Python     | [`veille`](https://pypi.org/project/veille/)                    | `pip install veille`                   |
+| Go         | [`veille-go`](https://pkg.go.dev/github.com/veilleio/veille-go) | `go get github.com/veilleio/veille-go` |
+| .NET       | [`Veille`](https://www.nuget.org/packages/Veille)               | `dotnet add package Veille`            |
+| Ruby       | [`veille`](https://rubygems.org/gems/veille)                    | `gem install veille`                   |
+| PHP        | [`veille/sdk`](https://packagist.org/packages/veille/sdk)       | `composer require veille/sdk`          |
+| Java       | [`veille-java`](https://github.com/veilleio/veille-java)        | build from source, see its README      |
+| CLI        | [`@veilleio/cli`](https://www.npmjs.com/package/@veilleio/cli)  | `npm install -g @veilleio/cli`         |
+| MCP server | [`@veilleio/mcp`](https://www.npmjs.com/package/@veilleio/mcp)  | `npx -y @veilleio/mcp`                 |
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
