@@ -1,0 +1,57 @@
+{
+  "name": "@veille/cli",
+  "version": "0.1.0",
+  "description": "Official command-line interface for the Veille fraud prevention API.",
+  "type": "module",
+  "bin": {
+    "veille": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "npm run clean && tsc -p tsconfig.build.json",
+    "clean": "node -e \"require('node:fs').rmSync('dist', { force: true, recursive: true })\"",
+    "format:check": "prettier --check .",
+    "prepack": "npm run build",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "author": "Veille",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veilleio/veille-cli.git"
+  },
+  "homepage": "https://github.com/veilleio/veille-cli#readme",
+  "bugs": {
+    "url": "https://github.com/veilleio/veille-cli/issues"
+  },
+  "keywords": [
+    "cli",
+    "command-line",
+    "veille",
+    "email-validation",
+    "fraud-prevention",
+    "vat-validation",
+    "ip-reputation"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@veille/sdk": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "prettier": "^3.4.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
