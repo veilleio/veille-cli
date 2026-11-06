@@ -1,5 +1,5 @@
 {
-  "name": "@veille/cli",
+  "name": "@veilleio/cli",
   "version": "0.1.0",
   "description": "Official command-line interface for the Veille fraud prevention API.",
   "type": "module",
@@ -46,7 +46,7 @@
     "node": ">=20"
   },
   "dependencies": {
-    "@veille/sdk": "^0.1.0"
+    "@veilleio/sdk": "^0.1.0"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",

@@ -4,7 +4,7 @@ import {
   VeilleError,
   type ApiResponse,
   type VeilleClientOptions,
-} from "@veille/sdk";
+} from "@veilleio/sdk";
 
 import { coerce, looseValue, normalize, parseArgs } from "./args.js";
 import { COMMANDS } from "./commands.js";

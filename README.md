@@ -14,14 +14,14 @@ Every documented endpoint is a command — **11 commands** — and `request` rea
 ## Install
 
 ```sh
-npm install --global @veille/cli
+npm install --global @veilleio/cli
 veille --help
 ```
 
 Or run it without installing:
 
 ```sh
-npx @veille/cli --help
+npx @veilleio/cli --help
 ```
 
 ## Configure your API key
@@ -100,7 +100,7 @@ veille intelligence-email --query jane.doe@example.com | jq .
 
 ## Built on the SDK
 
-The CLI uses the official [Node.js SDK](https://github.com/veilleio/veille-node) (`@veille/sdk`). Use the SDK directly for programmatic access.
+The CLI uses the official [Node.js SDK](https://github.com/veilleio/veille-node) (`@veilleio/sdk`). Use the SDK directly for programmatic access.
 
 ## License
 
